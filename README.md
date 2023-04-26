@@ -57,4 +57,5 @@
 
 ## Usage
 > `Relationship.calculateRelation(String person1 , String person2);`
+> 
 > @param person2 only support `FATHER` , `MOTHER` , `BROTHER` , `SISTER` , `SON` , `DAUGHTER` , `ME`
