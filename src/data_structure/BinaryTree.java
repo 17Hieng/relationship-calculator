@@ -2,6 +2,7 @@ package data_structure;
 
 public class BinaryTree {
     private String data;
+    private BinaryTree parent;
     private BinaryTree[] array;
     private BinaryTree[] children;
 
@@ -25,12 +26,21 @@ public class BinaryTree {
 
     public void addLeftChild(BinaryTree child) {
         this.children[0] = (child);
+        this.children[0].parent = this;
     }
 
     public void addRightChild(BinaryTree child) {
         this.children[1] = (child);
+        this.children[0].parent = this;
     }
 
+    public BinaryTree[] getArray(){
+        return this.array;
+    }
+
+    public BinaryTree getParent(){
+        return parent;
+    }
     public BinaryTree getLeft() {
         return children[0];
     }
