@@ -31,7 +31,7 @@ public class BinaryTree {
 
     public void addRightChild(BinaryTree child) {
         this.children[1] = (child);
-        this.children[0].parent = this;
+        this.children[1].parent = this;
     }
 
     public BinaryTree[] getArray(){
