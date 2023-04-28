@@ -128,13 +128,13 @@ public class Relationship {
         ancestor.addRightChild(great_great_granduncleoraunt);
 
         great_great_grandparent.addLeftChild(great_grandparent);
-        great_great_grandparent.addLeftChild(great_granduncleoraunt);
+        great_great_grandparent.addRightChild(great_granduncleoraunt);
 
         great_grandparent.addLeftChild(grandparent);
-        great_grandparent.addLeftChild(granduncleoraunt);
+        great_grandparent.addRightChild(granduncleoraunt);
 
         grandparent.addLeftChild(parent);
-        grandparent.addLeftChild(uncleoraunt);
+        grandparent.addRightChild(uncleoraunt);
 
         parent.addLeftChild(me);
         parent.addRightChild(sibling);
