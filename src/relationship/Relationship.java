@@ -189,58 +189,37 @@ public class Relationship {
             }
         }
 
-        switch (person2){
-            case FATHER -> {
-                try {
+        try {
+            switch (person2) {
+                case FATHER -> {
                     return p1.getParent().getArray()[0].getData();
-                } catch (NullPointerException e) {
-                    return "Error - The relationship calculation is not supported.";
                 }
-            }
-            case MOTHER -> {
-                try {
+                case MOTHER -> {
                     return p1.getParent().getArray()[1].getData();
-                } catch (NullPointerException e) {
-                    return "Error - The relationship calculation is not supported.";
                 }
-            }
-            case BROTHER -> {
-                try {
+                case BROTHER -> {
                     return p1.getParent().getRight().getArray()[0].getData();
-                } catch (NullPointerException e) {
-                    return "Error - The relationship calculation is not supported.";
                 }
-            }
-            case SISTER -> {
-                try {
+                case SISTER -> {
                     return p1.getParent().getRight().getArray()[1].getData();
-                } catch (NullPointerException e) {
-                    return "Error - The relationship calculation is not supported.";
                 }
-            }
-            case SON -> {
-                try {
-                    if(p1 == parent) return p1.getRight().getArray()[0].getData();
+                case SON -> {
+                    if (p1 == parent) return p1.getRight().getArray()[0].getData();
                     return p1.getLeft().getArray()[0].getData();
-                } catch (NullPointerException e) {
-                    return "Error - The relationship calculation is not supported.";
                 }
-            }
-            case DAUGHTER -> {
-                try {
-                    if(p1 == parent) return p1.getRight().getArray()[1].getData();
+                case DAUGHTER -> {
+                    if (p1 == parent) return p1.getRight().getArray()[1].getData();
                     return p1.getLeft().getArray()[1].getData();
-                } catch (NullPointerException e) {
-                    return "Error - The relationship calculation is not supported.";
+                }
+                case ME -> {
+                    return ME;
                 }
             }
-            case ME -> {
-                return ME;
-            }
-            default -> {
-                return "Error - The relationship calculation is not supported.";
-            }
+        }catch (NullPointerException e) {
+            throw new IllegalArgumentException("Error - The relationship is not supported.");
         }
+        return null;
     }
+
 
 }
