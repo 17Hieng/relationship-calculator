@@ -185,7 +185,7 @@ public class Relationship {
             case GREATGRANDSON, GREATGRANDDAUGHTER, GREATGRANDCHILD -> p1 = great_grandchild;
             case GREATGRANDNIECEORNEPHEW, GREATGRANDNIECE, GREATGRANDNEPHEW -> p1 = great_grandnieceornephew;
             default -> {
-                return "Error - Unknown Family member.";
+                throw new IllegalArgumentException("Error - The relationship is not supported.");
             }
         }
 
