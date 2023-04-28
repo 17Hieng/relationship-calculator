@@ -220,6 +220,7 @@ public class Relationship {
             }
             case SON -> {
                 try {
+                    if(p1 == parent) return p1.getRight().getArray()[0].getData();
                     return p1.getLeft().getArray()[0].getData();
                 } catch (NullPointerException e) {
                     return "Error - The relationship calculation is not supported.";
@@ -227,6 +228,7 @@ public class Relationship {
             }
             case DAUGHTER -> {
                 try {
+                    if(p1 == parent) return p1.getRight().getArray()[1].getData();
                     return p1.getLeft().getArray()[1].getData();
                 } catch (NullPointerException e) {
                     return "Error - The relationship calculation is not supported.";
@@ -240,4 +242,5 @@ public class Relationship {
             }
         }
     }
+
 }
