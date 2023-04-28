@@ -5,61 +5,61 @@ import data_structure.BinaryTree;
 
 public class Relationship {
     //https://www.mymcpl.org/sites/default/files/06-0395_ExtendedFamilyChart.pdf
-    final static String GREATGREATGRANDFATHER = "Great Great Grandfather";
-    final static String GREATGREATGRANDMOTHER = "Great Great Grandmother";
-    final static String GREATGREATGRANDPARENT = "Great Great Grandparent";
-    final static String GREATGREATGRANDUNCLEORAUNT = "Great Great Grand Uncle/Aunt";
-    final static String GREATGREATGRANDUNCLE = "Great Great Grand Uncle";
-    final static String GREATGREATGRANDAUNT = "Great Great Grand Aunt";
+    public final static String GREATGREATGRANDFATHER = "Great Great Grandfather";
+    public final static String GREATGREATGRANDMOTHER = "Great Great Grandmother";
+    public final static String GREATGREATGRANDPARENT = "Great Great Grandparent";
+    public final static String GREATGREATGRANDUNCLEORAUNT = "Great Great Grand Uncle/Aunt";
+    public final static String GREATGREATGRANDUNCLE = "Great Great Grand Uncle";
+    public final static String GREATGREATGRANDAUNT = "Great Great Grand Aunt";
 
-    final static String GREATGRANDFATHER = "Great Grandfather";
-    final static String GREATGRANDMOTHER = "Great Grandmother";
-    final static String GREATGRANDPARENT = "Great Grandparent";
-    final static String GREATGRANDUNCLEORAUNT = "Great Grand Uncle/Aunt";
-    final static String GREATGRANDUNCLE = "Great Grand Uncle";
-    final static String GREATGRANDAUNT = "Great Grand Aunt";
+    public final static String GREATGRANDFATHER = "Great Grandfather";
+    public final static String GREATGRANDMOTHER = "Great Grandmother";
+    public final static String GREATGRANDPARENT = "Great Grandparent";
+    public final static String GREATGRANDUNCLEORAUNT = "Great Grand Uncle/Aunt";
+    public final static String GREATGRANDUNCLE = "Great Grand Uncle";
+    public final static String GREATGRANDAUNT = "Great Grand Aunt";
 
-    final static String GRANDFATHER = "Grandfather";
-    final static String GRANDMOTHER = "Grandmother";
-    final static String GRANDPARENT = "Grandparent";
-    final static String GRANDUNCLEORAUNT = "Grand Uncle/Aunt";
-    final static String GRANDUNCLE = "Grand Uncle";
-    final static String GRANDAUNT = "Grand Aunt";
+    public final static String GRANDFATHER = "Grandfather";
+    public final static String GRANDMOTHER = "Grandmother";
+    public final static String GRANDPARENT = "Grandparent";
+    public final static String GRANDUNCLEORAUNT = "Grand Uncle/Aunt";
+    public final static String GRANDUNCLE = "Grand Uncle";
+    public final static String GRANDAUNT = "Grand Aunt";
 
-    final static String FATHER = "Father";
-    final static String MOTHER = "Mother";
-    final static String PARENT = "Parent";
-    final static String UNCLEORAUNT = "Uncle/Aunt";
-    final static String UNCLE = "Uncle";
-    final static String AUNT = "Aunt";
+    public final static String FATHER = "Father";
+    public final static String MOTHER = "Mother";
+    public final static String PARENT = "Parent";
+    public final static String UNCLEORAUNT = "Uncle/Aunt";
+    public final static String UNCLE = "Uncle";
+    public final static String AUNT = "Aunt";
 
 
-    final static String ME = "Me";
-    final static String SISTER = "Sister";
-    final static String BROTHER = "Brother";
-    final static String SIBLING = "Sibling";
-    final static String COUSIN = "Cousin";
+    public final static String ME = "Me";
+    public final static String SISTER = "Sister";
+    public final static String BROTHER = "Brother";
+    public final static String SIBLING = "Sibling";
+    public final static String COUSIN = "Cousin";
 
-    final static String CHILD = "Child";
-    final static String SON = "Son";
-    final static String DAUGHTER = "Daughter";
-    final static String NIECEORNEPHEW = "Niece/Nephew";
-    final static String NIECE = "Niece";
-    final static String NEPHEW = "Nephew";
+    public final static String CHILD = "Child";
+    public final static String SON = "Son";
+    public final static String DAUGHTER = "Daughter";
+    public final static String NIECEORNEPHEW = "Niece/Nephew";
+    public final static String NIECE = "Niece";
+    public final static String NEPHEW = "Nephew";
 
-    final static String GRANDSON = "Grand Son";
-    final static String GRANDDAUGHTER = "Grand Daughter";
-    final static String GRANDCHILD = "Grand Child";
-    final static String GRANDNIECEORNEPHEW = "Grand Niece/Nephew";
-    final static String GRANDNIECE = "Grand Niece";
-    final static String GRANDNEPHEW = "Grand Nephew";
+    public final static String GRANDSON = "Grand Son";
+    public final static String GRANDDAUGHTER = "Grand Daughter";
+    public final static String GRANDCHILD = "Grand Child";
+    public final static String GRANDNIECEORNEPHEW = "Grand Niece/Nephew";
+    public final static String GRANDNIECE = "Grand Niece";
+    public final static String GRANDNEPHEW = "Grand Nephew";
 
-    final static String GREATGRANDSON = "Great Grand Son";
-    final static String GREATGRANDDAUGHTER = "Great Grand Daughter";
-    final static String GREATGRANDCHILD = "Great Grand Child";
-    final static String GREATGRANDNIECEORNEPHEW = "Great Grand Niece/Nephew";
-    final static String GREATGRANDNIECE = "Great Grand Niece";
-    final static String GREATGRANDNEPHEW = "Great Grand Nephew";
+    public final static String GREATGRANDSON = "Great Grand Son";
+    public final static String GREATGRANDDAUGHTER = "Great Grand Daughter";
+    public final static String GREATGRANDCHILD = "Great Grand Child";
+    public final static String GREATGRANDNIECEORNEPHEW = "Great Grand Niece/Nephew";
+    public final static String GREATGRANDNIECE = "Great Grand Niece";
+    public final static String GREATGRANDNEPHEW = "Great Grand Nephew";
 
 
 
