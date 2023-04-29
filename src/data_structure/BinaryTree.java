@@ -35,7 +35,7 @@ public class BinaryTree {
     }
 
     public BinaryTree[] getArray(){
-        return this.array;
+        return (this.array != null)? this.array: new BinaryTree[]{this,this};
     }
 
     public BinaryTree getParent(){
