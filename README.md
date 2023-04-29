@@ -1,4 +1,21 @@
-# Relation Calculator (v1.0)
+# Relation Calculator (v1.0.1)
+
+## Change Log
+> #### Fix Incorrect Name(29042023T1843)
+> - Change "Grand Uncle/Aunt" to "Great Uncle/Aunt"
+> #### Fix Cousin relationship return null issue(29042023T1923)
+> #### Support More Relationship(29042023T1924)
+> - Added the following relatives
+> ```3rd Great Grandparent```
+> ```1st Cousin Thrice Removed```
+> ```1st Cousin Twice Removed```
+> ```2nd Cousin Twice Removed```
+> ```1st Cousin Once Removed```
+> ```2nd Cousin Once Removed```
+> ```3th Cousin Once Removed```
+> ```2nd Cousin```
+> ```3th Cousin```
+> ```4th Cousin```
 
 ## Introduction
 > Relation Calculator is used to calculate the relationship with your relatives.
