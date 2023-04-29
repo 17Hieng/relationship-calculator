@@ -3,6 +3,9 @@ package relationship;
 
 import data_structure.Person;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Relationship {
     //https://www.mymcpl.org/sites/default/files/06-0395_ExtendedFamilyChart.pdf
 
@@ -417,7 +420,7 @@ public class Relationship {
 
     public static String calculateNestedRelation(
             String person1,
-            String[] personList
+            Queue<String> personList
     ){
         if (person1.toLowerCase().contains("removed"))
             throw new IllegalArgumentException(
@@ -425,6 +428,7 @@ public class Relationship {
                             " does not supported in calculatedRelation method.");
 
         Person p1 = findPersonFromTree(person1);
+        String lastPerson = null;
 
         if(p1 == null)
             throw new IllegalArgumentException("Error - The relationship is not supported.");
@@ -438,10 +442,10 @@ public class Relationship {
                         case SON,DAUGHTER -> p1 = (p1 == parent)?  p1.getRight() : p1.getLeft();
                         case ME -> p1 = p1;
                         default -> throw new IllegalArgumentException("Error - The relationship is not supported.");
-
                     }
+                    lastPerson = item;
             }
-            switch (personList[personList.length - 1]){
+            switch (lastPerson){
                 case FATHER,BROTHER,SON -> {
                     return p1.getArray()[0].getAddressing();
                 }

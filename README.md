@@ -2,26 +2,26 @@
 
 ## Change Log
 > #### Fix Incorrect Name(29042023T1843)
-> - Change "Grand Uncle/Aunt" to "Great Uncle/Aunt"
+> >- Change "Grand Uncle/Aunt" to "Great Uncle/Aunt"
 > #### Fix Cousin relationship return null issue(29042023T1923)
 > #### Support More Relationship(29042023T1924)
-> - Added the following relatives
-> ```3rd Great Grandparent```
-> ```1st Cousin Thrice Removed```
-> ```1st Cousin Twice Removed```
-> ```2nd Cousin Twice Removed```
-> ```1st Cousin Once Removed```
-> ```2nd Cousin Once Removed```
-> ```3th Cousin Once Removed```
-> ```2nd Cousin```
-> ```3th Cousin```
-> ```4th Cousin```
+> >- Added the following relatives
+> >```3rd Great Grandparent```
+> >```1st Cousin Thrice Removed```
+> >```1st Cousin Twice Removed```
+> >```2nd Cousin Twice Removed```
+> >```1st Cousin Once Removed```
+> >```2nd Cousin Once Removed```
+> >```3th Cousin Once Removed```
+> >```2nd Cousin```
+> >```3th Cousin```
+> >```4th Cousin```
 > #### New Method(30042023T0147)
-> ``public static String calculateNestedRelation(
+> > ``public static String calculateNestedRelation(
 String person1,
-String[] personList
+Queue<String> personList
 )``
-> - Calculate nested relationship
+> >- Calculate nested relationship
 > 
 
 ## Introduction
@@ -97,11 +97,15 @@ String[] personList
 > ## calculateNestRelation method
 > - Calculate nested relationship
 > 
-> `Relationship.calculateRelation(String person1 , String[] personList);`
+> `Relationship.calculateRelation(String person1 , Queue<String> personList);`
 > 
 > @param person1 do not support `n`th Cousin `n` Removed
 > 
-> @param personList is list of nested relationship
+> @param personList is queue of nested relationship
 > 
-> - Eg: ``My Father's Mother's Sister's Daughter``
-> - ``personList[] = new String[]{Relationship.FATHER , Relationship.MOTHER , Relationship.SISTER , Relationship.DAUGHTER};``
+> - Eg: ``My Father's Mother's Daughter``
+> >- ``personList.add(Relationship.FATHER);``
+> >- ``personList.add(Relationship.MOTHER);``
+> >- ``personList.add(Relationship.DAUGHTER);``
+> 
+> >- ``Relationship.calculateRelation(Relationship.ME , personList);``
