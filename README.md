@@ -1,4 +1,4 @@
-# Relation Calculator (v1.0.1)
+# Relation Calculator (v1.0.2)
 
 ## Change Log
 > #### Fix Incorrect Name(29042023T1843)
@@ -16,6 +16,13 @@
 > ```2nd Cousin```
 > ```3th Cousin```
 > ```4th Cousin```
+> #### New Method(30042023T0147)
+> ``public static String calculateNestedRelation(
+String person1,
+String[] personList
+)``
+> - Calculate nested relationship
+> 
 
 ## Introduction
 > Relation Calculator is used to calculate the relationship with your relatives.
@@ -73,6 +80,28 @@
 
 
 ## Usage
+> ## calculateRelation method
+> - Calculate one relationship each times
+> 
 > `Relationship.calculateRelation(String person1 , String person2);`
 > 
+> @param person1 do not support `n`th Cousin `n` Removed
+> 
 > @param person2 only support `FATHER` , `MOTHER` , `BROTHER` , `SISTER` , `SON` , `DAUGHTER` , `ME`
+> 
+> @return addressing of the relative
+> 
+>
+> 
+> 
+> ## calculateNestRelation method
+> - Calculate nested relationship
+> 
+> `Relationship.calculateRelation(String person1 , String[] personList);`
+> 
+> @param person1 do not support `n`th Cousin `n` Removed
+> 
+> @param personList is list of nested relationship
+> 
+> - Eg: ``My Father's Mother's Sister's Daughter``
+> - ``personList[] = new String[]{Relationship.FATHER , Relationship.MOTHER , Relationship.SISTER , Relationship.DAUGHTER};``
