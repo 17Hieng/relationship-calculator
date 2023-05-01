@@ -527,10 +527,4 @@ public class Relationship {
         return p;
     }
 
-    public static void main(String[] args){
-        Queue<String> personList = new LinkedList<>();
-        personList.add(FATHER);
-
-        System.out.println(calculateNestedRelation(FATHER,personList));
-    }
 }
