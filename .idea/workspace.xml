@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12819ba5-1789-4d0f-a8da-4ac41b2fca63" name="Changes" comment="Complete the functionality of calculateRelation method" />
+    <list default="true" id="12819ba5-1789-4d0f-a8da-4ac41b2fca63" name="Changes" comment="Fix changes">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682524123675</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix changes">
+      <created>1685897087580</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685897087580</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +115,7 @@
     <MESSAGE value="Added relationship Constants" />
     <MESSAGE value="Added Family Tree" />
     <MESSAGE value="Complete the functionality of calculateRelation method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete the functionality of calculateRelation method" />
+    <MESSAGE value="Fix changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix changes" />
   </component>
 </project>
